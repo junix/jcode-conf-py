@@ -1,0 +1,25 @@
+"""Configuration constants extracted from jcode."""
+
+from .config import LETTA_HOME
+from .paths import (
+    GLOBAL_COMMANDS_DIR,
+    GLOBAL_CONFIG_DIR,
+    GLOBAL_HISTORY_DIR,
+    GLOBAL_PLUGINS_DIR,
+    INSTALLED_PLUGINS_FILE,
+    PROJECT_COMMANDS_DIR,
+    PROJECT_LETTA_DIR,
+    PROJECT_PLANS_DIR,
+)
+
+__all__ = [
+    "GLOBAL_COMMANDS_DIR",
+    "GLOBAL_CONFIG_DIR",
+    "GLOBAL_HISTORY_DIR",
+    "GLOBAL_PLUGINS_DIR",
+    "INSTALLED_PLUGINS_FILE",
+    "LETTA_HOME",
+    "PROJECT_COMMANDS_DIR",
+    "PROJECT_LETTA_DIR",
+    "PROJECT_PLANS_DIR",
+]
