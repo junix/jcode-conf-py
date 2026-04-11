@@ -21,6 +21,12 @@ dev = [
     "pytest>=9.0.2",
 ]
 
+[tool.ruff]
+line-length = 140
+
+[tool.ruff.format]
+skip-magic-trailing-comma = true
+
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["ALL"]
 "**/tests/**" = ["ALL"]
