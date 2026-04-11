@@ -3,7 +3,8 @@
 import os
 from pathlib import Path
 
-LETTA_HOME = Path(os.environ.get("LETTA_HOME", Path.home() / ".letta")).expanduser().resolve()
+_default_letta_home = Path.home() / ".letta"
+LETTA_HOME = Path(os.environ.get("LETTA_HOME", _default_letta_home)).expanduser().resolve()
 
 GLOBAL_CONFIG_DIR = LETTA_HOME
 GLOBAL_PLUGINS_DIR = LETTA_HOME / "plugins"
